@@ -1,0 +1,26 @@
+body {
+    background-color: #1f2122;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Orbitron", sans-serif;
+}
+
+p {
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Navigation */
+
+.bg-custom {
+    background-color: #1f2122;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link {
+    color: white;
+}
+.navbar {
+    padding: 0 0 4.5rem;
+}
