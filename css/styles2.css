@@ -3,6 +3,7 @@ body {
     color: #fff;
     font-family: "Nunito", sans-serif;
     text-align: center;
+    font-size: calc(0.75em + 1vmin);
 }
 
 h1, h2, h3 {
@@ -14,11 +15,10 @@ h4, h5, h6 {
 }
 
 /******************* Headings *******************/
-.big-heading {
+/* .big-heading {
     font-size: 3rem;
     line-height: 1.5rem;
-}
-
+} */
 /******************** Containers *******************/
 .container-fluid {
     padding: 7% 15%;
@@ -49,8 +49,8 @@ h4, h5, h6 {
 }
 
 .big-heading {
-    font-size: 6rem;
-    line-height: 10rem;
+    font-size: 6vw;
+    line-height: 11vw;
 }
 
 /* glowing header */
@@ -129,7 +129,7 @@ h4, h5, h6 {
 }
 
 .feature-box {
-    line-height: 2.5rem;
+    line-height: 3.5vh;
 }
 
 .feature-box p {
@@ -138,13 +138,13 @@ h4, h5, h6 {
 
 /******************** Testimonials Section *******************/
 .testimonial-text {
-    font-size: 3rem;
-    line-height: 1.5;
+    font-size: 3vw;
+    line-height: 5.5vw;
 }
 
 .testimonial-image {
     margin: 20px;
-    width: 20%;
+    width: 30%;
 }
 
 #press {
@@ -152,7 +152,7 @@ h4, h5, h6 {
 }
 
 .press-logo {
-    width: 10%;
+    width: 30vw;
     margin: 20px 20px 50px;
 }
 
@@ -163,8 +163,8 @@ h4, h5, h6 {
 }
 
 .pricing-heading {
-    font-size: 6rem;
-    line-height: 12rem;
+    font-size: 6vw;
+    line-height: 13vw;
     color: #5fb6ed;
     text-transform: uppercase;
 }
@@ -183,6 +183,20 @@ h4, h5, h6 {
 }
 
 /******************** Contact Section *******************/
+
+.contactLink {
+    text-decoration: none;
+    color:#aaa;
+}
+
+.contactLink:hover {
+    color: #fff;
+}
+
+.contactLink:visited {
+    color: #aaa;
+}
+
 .contactHeading {
     padding-bottom: 5%;
 }
@@ -191,7 +205,7 @@ h4, h5, h6 {
     padding: 7% 5%;
 }
 
-.form-control  {
+.form-control {
     background-color: #1f2122;
     color: #fff;
     font-family: "Nunito";
@@ -205,84 +219,141 @@ h4, h5, h6 {
 .list-item {
     line-height: 4;
     color: #aaa;
-
 }
 
 .rightContactIcons {
-
-padding: 30px;
-
+    padding: 30px;
 }
 
 .contactText {
     font-size: 1.125rem;
 }
 
-
-
-
 /* social media icons */
 .socialMedia {
-  position: relative;
-  font-size: 22px;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .socialMedia li a {
-  color: #fff;
+    color: #fff;
 }
 
 .socialMedia li {
-  position: relative;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 10px 3px;
-  line-height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: rgb(27,27,27);
-  cursor: pointer;
-  transition: all .2s ease-in-out;
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
 .socialMedia li:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
-  transition: all .2s ease-in-out;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
 }
 
 .socialMedia li:hover {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .socialMedia li:hover:after {
-  opacity: 1;
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
 }
 
 .socialMedia li:hover a {
-  color: #000;
+    color: #000;
 }
 
 hr {
-    border-color:  #fff;
+    border-color: #fff;
 }
 
 .copyright {
     color: #555;
     letter-spacing: 1px;
     text-align: center;
+}
+
+/* @media query breakpoints */
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+    }
+}
+
+/******** Start Tablet Version max width 990px ********/
+@media screen and (max-width: 990px) {
+
+    /* title section */
+    #title .container-fluid {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .big-heading {
+        font-size: 9vw;
+        line-height: 12vw;
+        margin-bottom: 5%;
+    }
+
+    /* testimonials */
+    /* pricing */
+    #pricing .container-fluid {
+        padding: 7% 2%;
+        text-align: center;
+    }
+
+    .pricing-heading {
+        font-size: 9vw;
+        line-height: 15vh;
+    }
+
+    .priceText {
+        padding: 5% 3% 5% 3%;
+    }
+
+    /* contact */
+    .contact-list {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .rightContactIcons {
+        text-align: left;
+    }
+}
+
+/******** Start phone Version max width 750px ********/
+@media screen and (max-width: 750px) {
+    .big-heading {
+        font-size: 16vw;
+        line-height: 18vw;
+        margin-bottom: 5%;
+        text-align: left;
+    }
 }
