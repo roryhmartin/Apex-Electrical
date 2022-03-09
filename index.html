@@ -63,7 +63,7 @@
                 <div class="col-lg-6">
                     <h1 class="big-heading pulsate align-middle">Charging into the Future</h1>
                     <a href="#contact"><button type="button" class="btn btn-outline-info btn-lg">GET IN TOUCH</button></a>
-                    <a href="#testimonials"><button type="button" class="btn btn-outline-info btn-lg">LEARN MORE</button></a> 
+                    <a href="#testimonials"><button type="button" class="btn btn-outline-info btn-lg">LEARN MORE</button></a>
                 </div>
 
 
@@ -201,18 +201,20 @@
             <div class="row gx-5">
 
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <form class="g-3 contactForm">
+                    <form class="g-3 contactForm" action="https://formsubmit.co/info@apex-ev.co.uk" method="POST">
+                        <input type="hidden" name="_cc" value="rorymartin3d@gmail.com,jamescusick3@hotmail.com">
+                        <input type="hidden" name="_subject" value="Apex Enquiry">
 
                         <label for="firstName" class="form-label"></label>
-                        <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                        <input type="text" name="name" class="form-control" id="firstName" placeholder="First Name" required>
 
 
                         <label for="lastName" class="form-label"></label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                        <input type="text" name="name" class="form-control" id="lastName" placeholder="Last Name" required>
 
 
                         <label for="emailInfo" class="form-label"></label>
-                        <input type="email" class="form-control" id="emailInfo" placeholder="Email e.g: info@apex-ev.co.uk" required>
+                        <input type="email" name="email" class="form-control" id="emailInfo" placeholder="Email e.g: info@apex-ev.co.uk" required>
 
 
                         <label for="phoneNumber" class="form-label"></label>
@@ -220,7 +222,8 @@
 
 
                         <label for="comments" class="form-label"></label>
-                        <textarea class="form-control" id="comments" rows="6" placeholder="Your message..." required></textarea>
+
+                        <textarea type="text" name="message" class="form-control" id="comments" rows="6" placeholder="Your message..." required></textarea>
 
 
                         <button type="submit" class="btn btn-outline-info btn-lg">Submit</button>
