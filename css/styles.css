@@ -1,26 +1,358 @@
 body {
     background-color: #1f2122;
-    color: white;
-    font-family: "Ubuntu", sans-serif;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: calc(0.75em + 1vmin);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     font-family: "Orbitron", sans-serif;
 }
 
-p {
-    font-family: "Ubuntu", sans-serif;
+h4, h5, h6 {
+    font-family: "Nunito", sans-serif;
 }
 
-/* Navigation */
-
-.bg-custom {
-    background-color: #1f2122;
+/******************* Headings *******************/
+/* .big-heading {
+    font-size: 3rem;
+    line-height: 1.5rem;
+} */
+/******************** Containers *******************/
+.container-fluid {
+    padding: 7% 15%;
 }
 
-.navbar-dark .navbar-nav .nav-item .nav-link {
-    color: white;
-}
+/******************** Navigation Bar *******************/
 .navbar {
     padding: 0 0 4.5rem;
+}
+
+.navbar-brand {}
+
+.nav-item {
+    padding: 0 20px;
+}
+
+.nav-link {
+    font-family: "Nunito";
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+/******************** Title Section *******************/
+#title .container-fluid {
+    /* look for an element with a class of container-fluid (child) within an element with the id #title (parent) */
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+
+.big-heading {
+    font-size: 6vw;
+    line-height: 11vw;
+}
+
+/* glowing header */
+.pulsate {
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+/* glow */
+@keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px #fff,
+            0 0 40px #228dff,
+            0 0 70px #228dff,
+            0 0 80px #228dff,
+            0 0 100px #228dff,
+            0 0 150px #228dff;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 15px #fff,
+            0 0 20px #228dff,
+            0 0 35px #228dff,
+            0 0 40px #228dff,
+            0 0 50px #228dff,
+            0 0 75px #228dff;
+    }
+}
+
+/* Buttons */
+/* Button Styles */
+.btn-outline-info {
+    margin: 5% 5% 5% 0%;
+}
+
+.btn-outline-info:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+/* Title Image */
+.img-holder {
+    position: relative;
+}
+
+.title-image {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+/******************** Services Section *******************/
+#features .container-fluid {
+    padding: 7% 2%;
+}
+
+/* #features {
+    position: relative;
+} */
+.icon {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.icon:hover {
+    color: #03e9f4;
+}
+
+.feature-box {
+    line-height: 3.5vh;
+}
+
+.feature-box p {
+    margin-bottom: 20%;
+}
+
+/******************** Testimonials Section *******************/
+.testimonial-text {
+    font-size: 3vw;
+    line-height: 5.5vw;
+}
+
+.testimonial-image {
+    margin: 20px;
+    width: 30%;
+}
+
+#press {
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 30vw;
+    margin: 20px 20px 50px;
+}
+
+/******************** Pricing Section *******************/
+#pricing .container-fluid {
+    padding: 7% 5%;
+    text-align: left;
+}
+
+.pricing-heading {
+    font-size: 6vw;
+    line-height: 13vw;
+    color: #5fb6ed;
+    text-transform: uppercase;
+}
+
+.pricing-heading span {
+    background-color: #fff;
+    padding: 2%;
+}
+
+.priceText {
+    padding: 40% 3% 5% 3%;
+}
+
+.electricCar {
+    width: 90%;
+}
+
+/******************** Contact Section *******************/
+.contactLink {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.contactLink:hover {
+    color: #fff;
+}
+
+.contactLink:visited {
+    color: #aaa;
+}
+
+.contactHeading {
+    padding-bottom: 5%;
+}
+
+#contact .container-fluid {
+    padding: 7% 5%;
+}
+
+.form-control {
+    background-color: #1f2122;
+    color: #fff;
+    font-family: "Nunito";
+}
+
+.contact-list {
+    list-style-type: none;
+    text-align: left;
+}
+
+.list-item {
+    line-height: 4;
+    color: #aaa;
+}
+
+.rightContactIcons {
+    padding: 30px;
+}
+
+.contactText {
+    font-size: 1.125rem;
+}
+
+/* social media icons */
+.socialMedia {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.socialMedia li a {
+    color: #fff;
+}
+
+.socialMedia li {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.socialMedia li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+}
+
+.socialMedia li:hover {
+    background-color: #fff;
+}
+
+.socialMedia li:hover:after {
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.socialMedia li:hover a {
+    color: #000;
+}
+
+hr {
+    border-color: #fff;
+}
+
+.copyright {
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* @media query breakpoints */
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+    }
+}
+
+/******** Start Tablet Version max width 990px ********/
+@media screen and (max-width: 990px) {
+
+    /* title section */
+    #title .container-fluid {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .big-heading {
+        font-size: 9vw;
+        line-height: 12vw;
+        margin-bottom: 5%;
+    }
+
+    /* testimonials */
+    /* pricing */
+    #pricing .container-fluid {
+        padding: 7% 2%;
+        text-align: center;
+    }
+
+    .pricing-heading {
+        font-size: 9vw;
+        line-height: 15vh;
+    }
+
+    .priceText {
+        padding: 5% 3% 5% 3%;
+    }
+
+    /* contact */
+    .contact-list {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .rightContactIcons {
+        text-align: left;
+    }
+}
+
+/******** Start phone Version max width 750px ********/
+@media screen and (max-width: 750px) {
+    .big-heading {
+        font-size: 16vw;
+        line-height: 18vw;
+        margin-bottom: 5%;
+        text-align: left;
+    }
 }
